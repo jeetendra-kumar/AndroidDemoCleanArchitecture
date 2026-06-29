@@ -1,4 +1,4 @@
-# AndroidDemoCleanArchitecture
+# AndroidAppdemo 🐝
 
 A clean Android application that fetches and displays a list of users from a mock REST API, with a detail screen for each user. Built with modern Android development best practices.
 
@@ -91,5 +91,4 @@ The detail screen then finds the selected user by ID from the already-loaded lis
 4. Run on an emulator or physical device (API 24+)
 
 No API keys or local configuration are required — the mock API is publicly accessible.
-
 
