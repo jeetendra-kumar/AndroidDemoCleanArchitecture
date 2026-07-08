@@ -66,23 +66,6 @@ API → UserDto → (mapper) → User (domain) → Repository → UseCase → Vi
 
 The detail screen then finds the selected user by ID from the already-loaded list — no second API call is made.
 
-## 🔧 Improvements & Future Scope
-
-| Area | Improvement                                                                                             |
-|---|---------------------------------------------------------------------------------------------------------|
-| **Caching** | Add a Room database layer so the user list is available offline and on re-launch without a network call |
-| **Pagination** | Integrate Paging 3 if the API grows to return paginated results                                         |
-| **Search & Filter** | Add a search bar on the user list screen to filter by name, company or country                          |
-| **Error Handling** | Distinguish between network errors (no internet) and server errors (4xx / 5xx) with specific messages   |
-| **Testing** | Add unit tests for `UserRepositoryImpl` and add more test cases for `UsersViewModel`                                    |
-| **UI Tests** | Add Compose UI tests for the list and detail screens using `ComposeTestRule`                            |
-| **ProGuard** | Enable `isMinifyEnabled = true` in the release build type and add the appropriate keep rules            |
-| **CI/CD** | Add a GitHub Actions workflow to build and run tests on every pull request                              |
-| **Deep Links** | Support deep linking directly to a user detail screen via a URI scheme                                  |
-| **Accessibility** | Audit and improve content descriptions, font scaling, and touch target sizes                            |
-
----
-
 ## 🏃 How to Run
 
 1. Clone the repository
